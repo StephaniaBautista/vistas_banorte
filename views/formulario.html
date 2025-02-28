@@ -31,5 +31,49 @@
       defer
     ></script>
   </head>
-  
+  <body>
+    <header class="header">
+      <div class="header__contenedor">
+        <div class="header__logo">
+          <a href="/" class="header__imagen__logo"
+            ><img src="/build/img/logo1.jpg" alt="logo Banorte"
+          /></a>
+        </div>
+        <nav class="header__navegacion">
+          <a href="/registro" class="header__enlace">Añadir Subasta</a>
+          <a href="/login" class="header__enlace">Perfil</a>
+        </nav>
+      </div>
+    </header>
+
+    <form action="" method="POST" class="formulario">
+      <!--Información del Vehículo-->
+      <div class="formulario__campo">
+        <label for="marca" class="marca">Marca:</label>
+        <input
+          type="text"
+          class="formulario__input"
+          placeholder="Inserta la Marca del modelo aquí"
+          id="marca"
+          name="marca"
+        />
+        <label for="modelo" class="modelo">Modelo:</label>
+        <input
+          type="text"
+          class="formulario__input"
+          placeholder="Inserta el Modelo del vehículo aquí"
+          id="modelo"
+          name="modelo"
+        />
+        <label for="año" class="año">Año:</label>
+        <input
+          type="text"
+          class="formulario__input"
+          placeholder="Inserta el Año del vehículo aquí"
+          id="año"
+          name="año"
+        />
+      </div>
+    </form>
+  </body>
 </html>
